@@ -1,0 +1,4 @@
+*.png
+bin/
+.vscode/
+cmd/cmd
