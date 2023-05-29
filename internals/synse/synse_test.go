@@ -24,7 +24,7 @@ func writeImg(arr *mat.CDense, outFileName string) error {
 }
 
 func TestGetGrad(t *testing.T) {
-	grad := getGrad(100, 100)
+	grad := getGrad(40, 80)
 	if grad == nil {
 		t.Fatal("getGrad failed")
 	}
@@ -35,8 +35,8 @@ func TestGetGrad(t *testing.T) {
 }
 
 func TestGetConvolver(t *testing.T) {
-	M := 100
-	N := 100
+	M := 40
+	N := 80
 	a1 := 72.0
 	a2 := 148.0
 	l1 := 0.5
@@ -53,8 +53,8 @@ func TestGetConvolver(t *testing.T) {
 }
 
 func TestGetPsfFreq(t *testing.T) {
-	M := 100
-	N := 100
+	M := 40
+	N := 80
 	a1 := 72.0
 	a2 := 148.0
 	l1 := 0.5
@@ -71,8 +71,8 @@ func TestGetPsfFreq(t *testing.T) {
 }
 
 func TestGetPsfSpat(t *testing.T) {
-	M := 100
-	N := 100
+	M := 40
+	N := 80
 	a1 := 72.0
 	a2 := 148.0
 	l1 := 0.5
